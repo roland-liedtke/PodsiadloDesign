@@ -182,38 +182,38 @@ a:hover {
 #start-1 {
     width: 75%;
     height: 100vh;
-    background-image: url(images/2\ 1.png);
+    background-image: url(https://rolandliedtke.me/PodsiadloDesign/images/2%201.png);
     background-attachment: fixed;
 }
 
 #start-2 {
     height: 50vh;
-    background-image: url(images/4\ 1.png);
+    background-image: url(https://rolandliedtke.me/PodsiadloDesign/images/4%201.png);
     background-size: cover;
 }
 
 #start-3 {
     height: 50vh;
-    background-image: url(images/5\ 1.png);
+    background-image: url(https://rolandliedtke.me/PodsiadloDesign/images/5%201.png);
     background-size: cover;
 }
 
 #panel-1 {
     height: 50vh;
-    background-image: url(images/5\ 2.png);
+    background-image: url(https://rolandliedtke.me/PodsiadloDesign/images/5%202.png);
     background-size: cover;
 }
 
 #panel-2 {
     height: 50vh;
-    background-image: url(images/6\ 1.png);
+    background-image: url(https://rolandliedtke.me/PodsiadloDesign/images/6%201.png);
     background-size: cover;
 }
 
 #panel-3 {
     width: 75%;
     height: 100vh;
-    background-image: url(images/2\ 2.png);
+    background-image: url(https://rolandliedtke.me/PodsiadloDesign/images/2%202.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -228,7 +228,7 @@ a:hover {
 
 @media screen and (max-width: 600px) {
     #start-1 {
-        background-image: url(images/5\ 1.png);
+        background-image: url(https://rolandliedtke.me/PodsiadloDesign/images/5%201.png);
         width: unset;
         background-attachment: scroll;
         background-size: cover;
