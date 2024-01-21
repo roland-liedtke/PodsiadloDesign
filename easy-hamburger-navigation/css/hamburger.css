@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    appearance: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+body {
+    background: #F9FAFB;
+
+}
+
+.nav {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 1s ;
+}
+
+.nav.show {
+    transform: translateX(0%);
+    opacity: 1;
+    width: 100%;
+}
+
+.list {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 40%;
+    overflow: hidden;
+    border-right: 1px solid black;
+}
+
+.list li {
+    margin: 1.5rem auto;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .list li {
+        font-size: 32px;
+    }
+}
+
+.info {
+    position: absolute;
+    padding-left: 30px;
+    top: 60%;
+    left: 60%;
+}
+
+.info .title {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.info .description {
+    color: #000;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.hamburger {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+}
+
+.hamburger:hover {
+    transform: scale(1.1);
+}
+
+.hamburger span {
+    position: absolute;
+    left: 0;
+    background: #313638;
+    width: inherit;
+    height: 4px;
+    transition: transform 0.5s, opacity 0.5s;
+    border-radius: 15px;
+}
+
+.top-line {
+    top: 0px;
+}
+
+.center-line {
+    top: 15px;
+    width: 25px !important;
+}
+
+.bottom-line {
+    bottom: 0px;
+}
+
+.top-line.active {
+    transform: translateY(15px) rotate(45deg);
+}
+
+.center-line.active {
+    opacity: 0;
+}
+
+.bottom-line.active {
+    transform: translateY(-15px) rotate(-45deg);
+}
